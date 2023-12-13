@@ -17,7 +17,6 @@ function App() {
           <Route path="/update" element={<Update/>}/>
         </Routes>
       </BrowserRouter>
-      Hello
     </div>
   );
 }
