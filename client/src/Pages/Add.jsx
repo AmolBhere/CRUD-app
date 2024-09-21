@@ -18,7 +18,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://crud-app-two-khaki.vercel.app/books", book);
+      await axios.post("https://book-management-system-backend-h144.onrender.com/books", book);
       navigate("/");
     } catch (err) {
       console.log(err);

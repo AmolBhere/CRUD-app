@@ -20,7 +20,7 @@ const Update = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.put("https://crud-app-two-khaki.vercel.app/" + bookId, book);
+      await axios.put("https://book-management-system-backend-h144.onrender.com/" + bookId, book);
       navigate("/");
     } catch (err) {
       console.log(err);

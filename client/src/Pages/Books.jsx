@@ -7,7 +7,7 @@ const Books = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const res = await axios.get("https://crud-app-two-khaki.vercel.app/books");
+        const res = await axios.get("https://book-management-system-backend-h144.onrender.com/books");
         setBooks(res.data);
       } catch (err) {
         console.log(err);
@@ -18,7 +18,7 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete("https://crud-app-two-khaki.vercel.app/books/" + id);
+      await axios.delete("https://book-management-system-backend-h144.onrender.com/books/" + id);
       window.location.reload();
     } catch (err) {
       console.log(err);
