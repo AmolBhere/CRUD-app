@@ -18,7 +18,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/books", book);
+      await axios.post("https://crud-app-two-khaki.vercel.app/books", book);
       navigate("/");
     } catch (err) {
       console.log(err);
